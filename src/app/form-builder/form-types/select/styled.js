@@ -32,14 +32,14 @@ export const Option = styled.li`
   padding: 12px 10px 13px 10px;
   margin-bottom: 4px;
   transition: all .3s ease;
-  background-color: rgb(110, 199, 179);
+  background-color: rgb(255, 255, 255, 0.1);
   box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 0px 1px inset;
   color: rgb(255, 255, 255);
   &:hover {
-    background: rgb(142, 212, 196);
+    background: rgb(255, 255, 255, 0.4);
   }
   ${({ selected }) => selected && `
-    background-color: rgb(110, 199, 179);
+    background-color: rgb(255, 255, 255, 0.6);
     box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 0px 2px inset;
   `}
 `

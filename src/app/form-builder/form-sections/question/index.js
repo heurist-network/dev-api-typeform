@@ -1,10 +1,11 @@
 import React from 'react';
 import { RadioImage, Checkbox, Select, InputText } from 'app/form-builder/form-types';
-import { QuestionWrapper, AnswersWrapper, QuestionTitle } from './styled';
+import { QuestionWrapper, AnswersWrapper, QuestionTitle, QuestionSubTitle } from './styled';
 
 const Question = ({ 
   content, 
   title, 
+  subtitle,
   control,
   register,
   setValue,
@@ -60,6 +61,7 @@ const Question = ({
   return (
     <QuestionWrapper>
       <QuestionTitle>{title}</QuestionTitle>
+      {subtitle && <QuestionSubTitle>{subtitle}</QuestionSubTitle>}
       <AnswersWrapper>
         {content.map((item, index) => (
           <div key={index}>

@@ -12,6 +12,13 @@ export const QuestionTitle = styled.h3`
   text-align: left;
 `
 
+export const QuestionSubTitle = styled.h4`
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFF;
+  text-align: left;
+`
+
 export const AnswersWrapper = styled.div`
   margin-top: 32px;
 `

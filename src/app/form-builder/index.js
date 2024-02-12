@@ -15,7 +15,6 @@ const FormBuilder = () => {
     if(currentStep.should_save) {
       // TODO: submit to API
       const values = getValues();
-      console.log(values);
       localStorage.setItem('form-values', JSON.stringify(values));
     }
 
@@ -37,8 +36,9 @@ const FormBuilder = () => {
       const currentQuestionTitle = currentStep.title;
       const isRequired = currentQuestionTitle.endsWith('*');
       const currentAnswer = getValues()[currentStep.question_id];
+      console.log(currentAnswer);
   
-      if (isRequired && (!currentAnswer || currentAnswer?.length === 0)) {
+      if (isRequired && (!currentAnswer || currentAnswer === '' || currentAnswer?.length === 0)) {
         alert('This is a required field. Please fill it out.');
         return;
       }
@@ -70,6 +70,7 @@ const FormBuilder = () => {
             register={register}
             questionId={step.question_id}
             title={step.title}
+            subtitle={step.subtitle}
             content={step.content} 
           />
         )

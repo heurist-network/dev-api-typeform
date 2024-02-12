@@ -16,7 +16,7 @@ export const Button = styled.button`
   padding: 8px 18px;
   min-height: 48px;
   background-color: rgb(255, 255, 255);
-  color: rgb(128, 128, 128);
+  color: rgb(40, 40, 40);
   border-radius: 4px;
 `
 

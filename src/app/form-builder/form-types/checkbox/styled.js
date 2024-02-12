@@ -27,7 +27,7 @@ export const CheckboxOption = styled.label`
     background-color: rgba(255,255,255, 0.1);
     box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 0px 1px inset;
     &:hover {
-      background-color: rgba(255,255,255, 0.3);
+      background-color: rgba(255,255,255, 0.4);
     }
   }
   input {
@@ -37,7 +37,7 @@ export const CheckboxOption = styled.label`
     display: none;
     visibility: hidden;
     &:checked + div {
-      background-color: rgba(255,255,255, 0.3);
+      background-color: rgba(255,255,255, 0.6);
     }
   }
   img {
