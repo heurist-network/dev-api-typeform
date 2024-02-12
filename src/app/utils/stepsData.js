@@ -49,7 +49,7 @@ const stepsData = [
           },
           {
             id: 7,
-            label: 'Security and compliance solutions',
+            label: 'Security solutions',
           },
           {
             id: 8,
@@ -97,19 +97,19 @@ const stepsData = [
         values: [
           {
             id: 1,
-            label: 'Beginner',
+            label: 'Beginner (new to AI)',
           },
           {
             id: 2,
-            label: 'Intermediate',
+            label: 'Intermediate (some experience)',
           },
           {
             id: 3,
-            label: 'Advanced',
+            label: 'Advanced (familiar with AI)',
           },
           {
             id: 4,
-            label: 'Expert',
+            label: 'Expert (AI professional)',
           },
         ],
       },
@@ -158,6 +158,32 @@ const stepsData = [
     id: 8,
     question_id: 7,
     type: 'question',
+    title: 'Are you attending ETHDenver 2024?',
+    subtitle: 'We’d love to provide support with your project at the event or just meet you in person.',
+    content: [
+      {
+        type: 'select',
+        values: [
+          {
+            id: 1,
+            label: 'Yes',
+          },
+          {
+            id: 2,
+            label: 'No',
+          },
+          {
+            id: 3,
+            label: 'Maybe',
+          }
+        ],
+      },
+    ]
+  },
+  {
+    id: 9,
+    question_id: 8,
+    type: 'question',
     title: 'Is there anything else you’d like to share with us?',
     subtitle: '',
     content: [
@@ -168,7 +194,7 @@ const stepsData = [
     ]
   },
   {
-    id: 9,
+    id: 10,
     type: 'section',
     should_save: true,
     hide_next_button: true,
