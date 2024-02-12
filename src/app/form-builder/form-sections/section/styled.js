@@ -12,4 +12,7 @@ export const Text = styled.p`
   color: #FFF;
   text-align: center;
   margin-bottom: 28px;
+  a {
+    color: #4287f5
+  }
 `

@@ -5,11 +5,11 @@ const stepsData = [
     content: [
       {
         type: 'text',
-        value: 'Hey there. We"d love to learn more about you and how our product is helping you.',
+        value: 'Hello! We’re excited to offer early access to our AI APIs and would love to understand your needs better.',
       },
       {
         type: 'text',
-        value: 'Can you spare 5 minutes?',
+        value: 'Can you take a few minutes to share some insights with us?',
       }
     ]
   },
@@ -17,21 +17,43 @@ const stepsData = [
     id: 2,
     question_id: 1,
     type: 'question',
-    title: 'First off, are you using the product for business or personal use? *',
-    subtitle: '',
+    title: 'What types of projects are you working on? *',
+    subtitle: 'Select all that apply.',
     content: [
       {
-        type: 'radio-image',
+        type: 'checkbox',
         values: [
           {
             id: 1,
-            image: './business.png',
-            label: 'Business',
+            label: 'DeFi',
           },
           {
             id: 2,
-            image: './personal.png',
-            label: 'Personal',
+            label: 'NFT',
+          },
+          {
+            id: 3,
+            label: 'DAO',
+          },
+          {
+            id: 4,
+            label: 'Crypto wallets and payments',
+          },
+          {
+            id: 5,
+            label: 'Blockchain analytics and data services',
+          },
+          {
+            id: 6,
+            label: 'Gaming and metaverse',
+          },
+          {
+            id: 7,
+            label: 'Security and compliance solutions',
+          },
+          {
+            id: 8,
+            label: 'Other',
           },
         ],
       },
@@ -41,27 +63,23 @@ const stepsData = [
     id: 3,
     question_id: 2,
     type: 'question',
-    title: 'Great. What is the size of your company? This question is required. *',
-    subtitle: '',
+    title: 'Which AI model categories are you most interested in? *',
+    subtitle: 'Select all that apply.',
     content: [
       {
         type: 'checkbox',
         values: [
           {
             id: 1,
-            label: 'Self-Employed/Freelancer',
+            label: 'Image generation (Stable Diffusion)',
           },
           {
             id: 2,
-            label: '1-10 employees',
+            label: 'Language models',
           },
           {
             id: 3,
-            label: '11-50 employees',
-          },
-          {
-            id: 4,
-            label: '51-200 employees',
+            label: 'Other',
           },
         ],
       },
@@ -71,27 +89,27 @@ const stepsData = [
     id: 4,
     question_id: 3,
     type: 'question',
-    title: 'And which type of industry do you work in? This question is required. *',
-    subtitle: '',
+    title: 'What is your level of experience with using AI? *',
+    subtitle: 'Select an option.',
     content: [
       {
         type: 'select',
         values: [
           {
             id: 1,
-            label: 'Accounting',
+            label: 'Beginner',
           },
           {
             id: 2,
-            label: 'Animation',
+            label: 'Intermediate',
           },
           {
             id: 3,
-            label: 'Apparel & Fashion',
+            label: 'Advanced',
           },
           {
             id: 4,
-            label: 'Arts and Crafts',
+            label: 'Expert',
           },
         ],
       },
@@ -101,28 +119,67 @@ const stepsData = [
     id: 5,
     question_id: 4,
     type: 'question',
-    title: "If you'd like us to follow up with you, please be sure to leave your email address below :)",
-    subtitle: '',
+    title: 'How do you plan to use our AI APIs in your project? *',
+    subtitle: 'This will help us tailor the AI models and APIs to better suit your needs.',
     content: [
       {
         type: 'input',
-        placeholder: 'name@example.com'
+        placeholder: 'Describe your use case',
       },
     ]
   },
   {
     id: 6,
+    question_id: 5,
+    type: 'question',
+    title: 'What is your email address? *',
+    subtitle: 'We will use this to get back to you with early access details.',
+    content: [
+      {
+        type: 'input',
+        placeholder: 'Enter your email address',
+      },
+    ]
+  },
+  {
+    id: 7,
+    question_id: 6,
+    type: 'question',
+    title: 'What is your project name and project URL?',
+    subtitle: 'We will prioritize early access for projects that have a clear use case and a live URL.',
+    content: [
+      {
+        type: 'input',
+        placeholder: 'Project name and URL',
+      },
+    ]
+  },
+  {
+    id: 8,
+    question_id: 7,
+    type: 'question',
+    title: 'Is there anything else you’d like to share with us?',
+    subtitle: '',
+    content: [
+      {
+        type: 'input',
+        placeholder: 'Share your thoughts',
+      },
+    ]
+  },
+  {
+    id: 9,
     type: 'section',
     should_save: true,
     hide_next_button: true,
     content: [
       {
         type: 'text',
-        value: 'Your data has been saved :)',
+        value: 'Your response has been submitted successfully.',
       },
       {
         type: 'text',
-        value: "It's in your local storage",
+        value: 'We\'ll get back to you with early access details soon. Follow us on <a href="https://twitter.com/heurist_ai">Twitter</a> and join our <a href="https://discord.gg/uekZGwkrW5">Discord</a> for updates.',
       }
     ]
   },

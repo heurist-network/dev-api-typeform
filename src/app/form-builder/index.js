@@ -13,6 +13,7 @@ const FormBuilder = () => {
   useEffect(() => {
     const currentStep = stepsData[currentIndexForm];
     if(currentStep.should_save) {
+      // TODO: submit to API
       const values = getValues();
       console.log(values);
       localStorage.setItem('form-values', JSON.stringify(values));
@@ -31,11 +32,23 @@ const FormBuilder = () => {
   }, []);
 
   const setNewCurrentIndexForm = (newIndex) => {
+    const currentStep = stepsData[currentIndexForm];
+    if (currentStep.type === 'question' && newIndex > currentIndexForm) {
+      const currentQuestionTitle = currentStep.title;
+      const isRequired = currentQuestionTitle.endsWith('*');
+      const currentAnswer = getValues()[currentStep.question_id];
+  
+      if (isRequired && (!currentAnswer || currentAnswer?.length === 0)) {
+        alert('This is a required field. Please fill it out.');
+        return;
+      }
+    }
+  
     newIndex > currentIndexForm ? setClassNameState('fade') : setClassNameState('fade-out');
-
+  
     setTimeout(() => {
       setCurrentIndexForm(newIndex);
-    }, 50)
+    },  50)
   }
 
   const generateFormStep = (step) => {
