@@ -16,7 +16,7 @@ const FormBuilder = () => {
       const values = getValues();
       localStorage.setItem('form-values', JSON.stringify(values));
 
-      fetch('https://www.heurist.xyz/api/dev-api-form', {
+      fetch('https://www.heurist.xyz/api/submit_dev_api_form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
