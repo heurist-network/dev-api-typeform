@@ -21,7 +21,7 @@ const FormBuilder = () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(values)
+        body: JSON.stringify({ data: values })
       })
       .then(response => response.json())
       .then(data => console.log("Form data saved successfully"))
