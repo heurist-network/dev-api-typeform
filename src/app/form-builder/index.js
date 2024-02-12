@@ -13,9 +13,19 @@ const FormBuilder = () => {
   useEffect(() => {
     const currentStep = stepsData[currentIndexForm];
     if(currentStep.should_save) {
-      // TODO: submit to API
       const values = getValues();
       localStorage.setItem('form-values', JSON.stringify(values));
+
+      fetch('https://heurist.xyz/api/dev-api-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(values)
+      })
+      .then(response => response.json())
+      .then(data => console.log("Form data saved successfully"))
+      .catch(error => console.log(error));
     }
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
