@@ -5,7 +5,7 @@ const stepsData = [
     content: [
       {
         type: 'text',
-        value: 'Hello! We’re excited to offer early access to our AI APIs and would love to understand your needs better.',
+        value: 'Hello! We’re excited to offer early access to our AI APIs.',
       },
       {
         type: 'text',

@@ -7,6 +7,6 @@ export const PageWrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(94, 193, 171);
+  background-color: rgb(0, 0, 0);
   background-image: url('./background.png'); 
 `
