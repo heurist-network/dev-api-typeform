@@ -158,32 +158,6 @@ const stepsData = [
     id: 8,
     question_id: 7,
     type: 'question',
-    title: 'Are you attending ETHDenver 2024?',
-    subtitle: 'We’d love to provide support with your project at the event or just meet you in person.',
-    content: [
-      {
-        type: 'select',
-        values: [
-          {
-            id: 1,
-            label: 'Yes',
-          },
-          {
-            id: 2,
-            label: 'No',
-          },
-          {
-            id: 3,
-            label: 'Maybe',
-          }
-        ],
-      },
-    ]
-  },
-  {
-    id: 9,
-    question_id: 8,
-    type: 'question',
     title: 'Is there anything else you’d like to share with us?',
     subtitle: '',
     content: [
@@ -194,7 +168,7 @@ const stepsData = [
     ]
   },
   {
-    id: 10,
+    id: 9,
     type: 'section',
     should_save: true,
     hide_next_button: true,
