@@ -169,6 +169,19 @@ const stepsData = [
   },
   {
     id: 9,
+    question_id: 8,
+    type: 'question',
+    title: 'Do you have a referral code?',
+    subtitle: '',
+    content: [
+      {
+        type: 'input',
+        placeholder: 'Referral code (optional)',
+      },
+    ]
+  },
+  {
+    id: 10,
     type: 'section',
     should_save: true,
     hide_next_button: true,
