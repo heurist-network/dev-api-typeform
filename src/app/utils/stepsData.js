@@ -33,7 +33,7 @@ const stepsData = [
           },
           {
             id: 3,
-            label: 'DAO',
+            label: 'AI Agents',
           },
           {
             id: 4,
@@ -71,11 +71,11 @@ const stepsData = [
         values: [
           {
             id: 1,
-            label: 'Image generation (Stable Diffusion)',
+            label: 'Image generation',
           },
           {
             id: 2,
-            label: 'Language models',
+            label: 'Large language models',
           },
           {
             id: 3,
