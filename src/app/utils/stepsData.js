@@ -5,7 +5,7 @@ const stepsData = [
     content: [
       {
         type: 'text',
-        value: 'Hello! We’re excited to offer early access to our AI APIs.',
+        value: 'Hello! We’re excited to offer trial access to our AI APIs.',
       },
       {
         type: 'text',
@@ -37,19 +37,19 @@ const stepsData = [
           },
           {
             id: 4,
-            label: 'Crypto wallets and payments',
+            label: 'Data Analytics',
           },
           {
             id: 5,
-            label: 'Blockchain analytics and data services',
+            label: 'Marketing and Social Media',
           },
           {
             id: 6,
-            label: 'Gaming and metaverse',
+            label: 'Gaming',
           },
           {
             id: 7,
-            label: 'Security solutions',
+            label: 'Research',
           },
           {
             id: 8,
@@ -63,64 +63,8 @@ const stepsData = [
     id: 3,
     question_id: 2,
     type: 'question',
-    title: 'Which AI model categories are you most interested in? *',
-    subtitle: 'Select all that apply.',
-    content: [
-      {
-        type: 'checkbox',
-        values: [
-          {
-            id: 1,
-            label: 'Image generation',
-          },
-          {
-            id: 2,
-            label: 'Large language models',
-          },
-          {
-            id: 3,
-            label: 'Other',
-          },
-        ],
-      },
-    ]
-  },
-  {
-    id: 4,
-    question_id: 3,
-    type: 'question',
-    title: 'What is your level of experience with using AI? *',
-    subtitle: 'Select an option.',
-    content: [
-      {
-        type: 'select',
-        values: [
-          {
-            id: 1,
-            label: 'Beginner (new to AI)',
-          },
-          {
-            id: 2,
-            label: 'Intermediate (some experience)',
-          },
-          {
-            id: 3,
-            label: 'Advanced (familiar with AI)',
-          },
-          {
-            id: 4,
-            label: 'Expert (AI professional)',
-          },
-        ],
-      },
-    ]
-  },
-  {
-    id: 5,
-    question_id: 4,
-    type: 'question',
     title: 'How do you plan to use our AI APIs in your project? *',
-    subtitle: 'This will help us tailor the AI models and APIs to better suit your needs.',
+    subtitle: 'This will help us tailor our products to better suit your needs.',
     content: [
       {
         type: 'input',
@@ -129,11 +73,11 @@ const stepsData = [
     ]
   },
   {
-    id: 6,
-    question_id: 5,
+    id: 4,
+    question_id: 3,
     type: 'question',
     title: 'What is your email address? *',
-    subtitle: 'We will use this to get back to you with early access details.',
+    subtitle: 'We will use this to get back to you with the API keys.',
     content: [
       {
         type: 'input',
@@ -142,11 +86,11 @@ const stepsData = [
     ]
   },
   {
-    id: 7,
-    question_id: 6,
+    id: 5,
+    question_id: 4,
     type: 'question',
     title: 'What is your project name and project URL?',
-    subtitle: 'We will prioritize early access for projects that have a clear use case and a live URL.',
+    subtitle: 'We will prioritize giving free trial access for projects that have a clear use case and a live URL.',
     content: [
       {
         type: 'input',
@@ -155,21 +99,34 @@ const stepsData = [
     ]
   },
   {
-    id: 8,
-    question_id: 7,
+    id: 6,
+    question_id: 5,
     type: 'question',
-    title: 'Is there anything else you’d like to share with us?',
+    title: 'What is your Twitter handle? (MUST follow https://x.com/heurist_ai to get free access)',
     subtitle: '',
     content: [
       {
         type: 'input',
-        placeholder: 'Share your thoughts',
+        placeholder: 'Enter your Twitter handle',
       },
     ]
   },
   {
-    id: 9,
-    question_id: 8,
+    id: 7,
+    question_id: 6,
+    type: 'question',
+    title: 'What is your GitHub username? (MUST hit a star on https://github.com/heurist-network/heurist-agent-framework to get free access)',
+    subtitle: '',
+    content: [
+      {
+        type: 'input',
+        placeholder: 'Enter your GitHub username',
+      },
+    ]
+  },
+  {
+    id: 8,
+    question_id: 7,
     type: 'question',
     title: 'Do you have a referral code?',
     subtitle: '',
@@ -181,7 +138,7 @@ const stepsData = [
     ]
   },
   {
-    id: 10,
+    id: 9,
     type: 'section',
     should_save: true,
     hide_next_button: true,
@@ -192,7 +149,7 @@ const stepsData = [
       },
       {
         type: 'text',
-        value: 'We\'ll get back to you with early access details soon. Follow us on <a href="https://twitter.com/heurist_ai">Twitter</a> and join our <a href="https://discord.gg/uekZGwkrW5">Discord</a> for updates.',
+        value: 'We\'ll get back to you with early access details soon. Join our <a href="https://discord.com/invite/heuristai">Discord</a> for updates. Read our <a href="https://docs.heurist.ai/dev-guide/integration-overview">developer docs</a> for more information.',
       }
     ]
   },
